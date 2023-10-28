@@ -17,3 +17,11 @@ end
 Rails.application.routes.draw do
   get("/square_root/results", { :controller => "square_root_results", :action => "square_root_results" })
 end
+
+Rails.application.routes.draw do
+  get("/payment/new", { :controller => "payment", :action => "calc_pay" })
+end
+
+Rails.application.routes.draw do
+  get("/payment/results", { :controller => "payment_results", :action => "calc_pay_results" })
+end
